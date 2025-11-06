@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSec Portfolio | [Your Name]</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0a0f14;
+      color: #00ff99;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #00ff99;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #00ff99;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #00ff99;
+      text-decoration: none;
+      margin-left: 30px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 120px 60px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff99;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      max-width: 700px;
+    }
+
+    .terminal {
+      background: #111;
+      border: 1px solid #00ff99;
+      padding: 20px;
+      margin-top: 40px;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    .terminal span {
+      color: #00ff99;
+    }
+
+    .skills, .projects {
+      text-align: center;
+    }
+
+    .skills h2, .projects h2, .contact h2 {
+      color: #00ff99;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill {
+      background: #111;
+      padding: 20px 40px;
+      border-radius: 10px;
+      border: 1px solid #00ff99;
+      box-shadow: 0 0 10px #00ff99;
+      transition: transform 0.3s;
+    }
+
+    .skill:hover {
+      transform: scale(1.05);
+    }
+
+    .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #00ff99;
+      text-align: left;
+      box-shadow: 0 0 10px #00ff99;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      color: #00ff99;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #00ff99;
+      color: #00ff99;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      background: #111;
+      border: 1px solid #00ff99;
+      color: #00ff99;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    .contact button {
+      background: #00ff99;
+      border: none;
+      color: #000;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #00cc7a;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>&lt;CyberSec/&gt;</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span style="color:#fff;">[Your Name]</span></h2>
+    <p>Cybersecurity Analyst | Penetration Tester | Digital Forensics Enthusiast</p>
+
+    <div class="terminal">
+      <p><span>$</span> whoami<br> <span>></span> cyber.defender</p>
+      <p><span>$</span> nmap -A target.com<br> <span>></span> scanning...</p>
+      <p><span>$</span> echo "Securing the future_"<span class="cursor">|</span></p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Network Security</div>
+      <div class="skill">Penetration Testing</div>
+      <div class="skill">Digital Forensics</div>
+      <div class="skill">Incident Response</div>
+      <div class="skill">Python Scripting</div>
+      <div class="skill">Threat Intelligence</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <div class="project">
+        <h3>Vulnerability Scanner</h3>
+        <p>Developed a Python-based tool for detecting open ports, outdated software, and CVEs in target systems.</p>
+      </div>
+      <div class="project">
+        <h3>SIEM Dashboard</h3>
+        <p>Built a real-time threat monitoring system integrating logs from multiple sources with alert automation.</p>
+      </div>
+      <div class="project">
+        <h3>CTF Challenges</h3>
+        <p>Created and solved Capture The Flag challenges focused on privilege escalation, web exploits, and forensics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 [Your Name] | Cybersecurity Portfolio</p>
+  </footer>
+</body>
+</html>
